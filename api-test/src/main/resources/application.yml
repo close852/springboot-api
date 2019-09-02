@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/mwdb
+    username: mwuser
+    password: mwpassword
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+  data:
+    rest:
+      base-path: /api
+      default-page-size: 10
